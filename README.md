@@ -6,6 +6,12 @@ Luna is a portable command-line converter of Lua programs to TNS TI-Nspire docum
 
 It can also be used to convert any TI-Nspire problems in XML format to TNS documents.
 
+## Installation
+First, ensure flakes are enabled on your system.
+
+You can run Luna-Nix transiently using `nix run github:k6av/Luna-Nix`.
+You can install it in your profile as `luna` using `nix profile install github:k6av/Luna-Nix`.
+
 ## Usage
 
 * Lua program conversion:    `luna INFILE.lua OUTFILE.tns`
@@ -27,11 +33,9 @@ Luna is based on a derived version of MiniZip. See minizip-1.1/MiniZip64_info.tx
 Luna includes cryptographic software written by Eric Young (eay@cryptsoft.com), see the DES.* files for more information.  
 The JS version uses FileSaver.js, MIT-licensed.
 
-## Building it yourself
+<!-- ## Building it yourself
 
-Luna-Nix is build using Nix flakes. Enable the `flakes` feature. Running `nix build` will output a binary to `result/bin/luna`, `nix run` will immediately run the binary.
-
-<!-- You need the zlib (zlib1g-dev/zlib-devel) development library. On macOS, you can use [brew](http://brew.sh/): `brew install zlib`  
+You need the zlib (zlib1g-dev/zlib-devel) development library. On macOS, you can use [brew](http://brew.sh/): `brew install zlib`  
 Then you can just run `make`. -->
 
 ## History
