@@ -1,6 +1,7 @@
-Luna 2.1
+Luna-Nix 2.1
 ========
 
+Luna-Nix is a distribution of Luna for the Nix package manager.
 Luna is a portable command-line converter of Lua programs to TNS TI-Nspire documents, compatible with OS 3.0.2 and later.
 
 It can also be used to convert any TI-Nspire problems in XML format to TNS documents.
@@ -16,7 +17,8 @@ Make sure to encode your Lua or Problem file in UTF-8 if it contains special cha
 
 ## Bugs, feedback...
 
-Please use the GitHub [issue tracker](https://github.com/ndless-nspire/Luna/issues).
+Report packaging issues in the [tracker for this repository](https://github.com/k6av/Luna-Nix/issues).
+Please use the [upstream issue tracker](https://github.com/ndless-nspire/Luna/issues) for issues within Luna itself.
 
 ## License
 
@@ -27,8 +29,10 @@ The JS version uses FileSaver.js, MIT-licensed.
 
 ## Building it yourself
 
-You need the zlib (zlib1g-dev/zlib-devel) development library. On macOS, you can use [brew](http://brew.sh/): `brew install zlib`  
-Then you can just run `make`.
+Luna-Nix is build using Nix flakes. Enable the `flakes` feature. Running `nix build` will output a binary to `result/bin/luna`, `nix run` will immediately run the binary.
+
+<!-- You need the zlib (zlib1g-dev/zlib-devel) development library. On macOS, you can use [brew](http://brew.sh/): `brew install zlib`  
+Then you can just run `make`. -->
 
 ## History
 
